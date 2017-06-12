@@ -138,16 +138,13 @@ Date object
 - Declare a variable: 'stringDate'.
 - Set the value of 'stringDate' to be a string of today's date.
 **************************************************************************************/
-// (function(testerTwo){
+(function(testerTwo){
   "use strict";
   var today = new Date();
   var stringDate = today;
-  console.log(stringDate);
-//   console.assert(stringDate == testerTwo, "#6 Test Failed. Did you set stringDate correctly?")
-// })(testerTwo);
-
-
-
+  console.log("#6 stringDate", stringDate)
+console.assert(stringDate == today.toString(), "#6 Test Failed. Did you set stringDate correctly?")
+})();
 
 
 
